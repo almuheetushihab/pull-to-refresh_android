@@ -38,7 +38,7 @@ class MainActivity : ComponentActivity() {
                 var isRefreshing by remember { mutableStateOf(false) }
 
                 val items = remember {
-                    (0..40).toList()
+                    (0..50).toList()
                 }
 
                 val coroutineScope = rememberCoroutineScope()
@@ -74,5 +74,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GreetingPreview() {
     PullToRefreshTheme {
+
     }
 }
